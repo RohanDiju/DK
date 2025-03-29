@@ -1,0 +1,301 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #121212, #1a1a1a); /* Dark gradient background */
+  color: #e0e0e0; /* Softer text for contrast */
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(18, 18, 18, 0.95), rgba(26, 26, 26, 0.95)); /* Subtle header gradient */
+  backdrop-filter: blur(10px); /* Smooth blur effect */
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+}
+
+.header-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4d5a; /* Accent color */
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(135deg, #ff4d5a, #ff755c); /* Hover gradient effect */
+  color: #fff;
+}
+
+/* Home Section (Hero Section) */
+/* Existing styles remain the same */
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add a dark overlay */
+.slide-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.slide-text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-text p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Make sure images cover the full slide area */
+.swiper-slide {
+  height: 100vh;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video Section */
+.video-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #121212); /* Gradient for section */
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4d5a;
+  margin-bottom: 20px;
+}
+
+.video-frame {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 45%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Choreographers Section */
+.choreographers-section {
+  padding: 2rem;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+}
+
+.choreographer-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.choreographer-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.choreographer-info h3 {
+  margin: 0;
+  color: #ebe3e3; /* Explicitly set to white */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.choreographer-info p {
+  margin: 0.5rem 0;
+}
+
+/* Testimonials Section Container */
+.testimonials-section {
+  padding: 4rem 2rem;
+  /* background-color: #f8f9fa; */
+}
+
+.testimonials-section h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fcebeb;
+  font-size: 2.5rem;
+}
+
+/* Grid Layout for Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Testimonial Card */
+.celebrity-testimonial {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.celebrity-testimonial:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonial Header with Image and Info */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.celebrity-image-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.celebrity-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+}
+
+/* Celebrity Information */
+.celebrity-info {
+  flex-grow: 1;
+}
+
+.celebrity-name {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.celebrity-role {
+  margin: 0.25rem 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Quote Styling */
+.celebrity-quote {
+  margin: 0;
+  color: #555;
+  font-style: italic;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 3rem 1rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .celebrity-testimonial {
+    padding: 1.5rem;
+  }
+
+  .testimonials-section h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}

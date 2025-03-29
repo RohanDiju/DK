@@ -1,0 +1,208 @@
+/* Main Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Story Section */
+.story-section {
+  margin-bottom: 4rem;
+}
+
+.story-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  color: #cfcfcf;
+  margin-bottom: 1.5rem;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #9b9a9a;
+}
+
+.story-image {
+  flex: 1;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Choreographers Section */
+.choreographers-section {
+  margin-bottom: 4rem;
+}
+
+.choreographers-section h2 {
+  font-size: 2.5rem;
+  color: cfcfcf;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.choreographers-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.choreographer-card {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.choreographer-card:hover {
+  transform: translateY(-5px);
+}
+
+.choreographer-image {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.choreographer-details {
+  flex: 1;
+}
+
+.choreographer-details h4 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.choreographer-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #838181;
+  margin-bottom: 1.5rem;
+}
+
+.achievements {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements li {
+  padding: 0.5rem 0;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.achievements li::before {
+  content: "•";
+  color: #4a90e2;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Achievements Section */
+.achievements-section {
+  margin-bottom: 4rem;
+}
+
+.achievements-section h2 {
+  font-size: 2.5rem;
+  color: cfcfcf;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.achievements-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.achievement-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 1.5rem 1.5rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .story-content {
+    flex-direction: column;
+  }
+
+  .choreographer-card {
+    flex-direction: column;
+  }
+
+  .choreographer-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .achievements-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .story-text h2,
+  .choreographers-section h2,
+  .achievements-section h2 {
+    font-size: 2rem;
+  }
+
+  .choreographer-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .achievement-card h3 {
+    font-size: 1.2rem;
+  }
+}   

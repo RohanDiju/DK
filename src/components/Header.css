@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px; /* Reduced padding for a smaller height */
+  background: rgba(18, 18, 18, 0.9); /* Transparent dark background */
+  backdrop-filter: blur(10px); /* Smooth background blur */
+  color: #fff;
+  position: fixed; /* Fixed position for header */
+  top: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* High z-index to stay above other elements */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gentle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(18, 18, 18, 0.95); /* Slightly darker when scrolled */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+}
+
+.logo a {
+  color: #a31925; /* Elegant red accent for logo */
+  font-size: 1.4rem; /* Smaller font size for logo */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #ff4d5a; /* Brighter red on hover */
+}
+
+.nav {
+  display: flex;
+  gap: 20px; /* Reduced gap between navigation items */
+}
+
+.nav__list {
+  display: flex;
+  gap: 15px; /* Reduced gap for compact layout */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: #e0e0e0; /* Soft text color */
+  text-decoration: none;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  padding: 6px 10px; /* Reduced padding for clickable area */
+  border-radius: 6px; /* Slightly smaller rounded edges */
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.nav__link:hover {
+  background-color: rgba(230, 57, 70, 0.2); /* Red-tinted hover background */
+  color: #000000;
+  transform: translateY(-2px); /* Gentle lift effect */
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle__bar {
+  width: 25px; /* Reduced width for smaller menu bars */
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: rgba(18, 18, 18, 0.95); /* Transparent dropdown background */
+    backdrop-filter: blur(12px);
+    position: absolute;
+    top: 100%;
+    right: 0; /* Changed from 10px to ensure full coverage */
+    width: 100%; /* Changed from 200px to cover full width */
+    max-width: 250px; /* Added max-width for better appearance */
+    border-radius: 0 0 10px 10px; /* Adjusted to only round bottom corners */
+    padding: 15px; /* Padding for dropdown */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Dropdown shadow */
+  }
+
+  .nav--open {
+    display: flex;
+  }
+  
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav__item {
+    width: 100%;
+  }
+  
+  .nav__link {
+    display: block;
+    padding: 12px 15px; /* Increased padding for better touch targets */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
