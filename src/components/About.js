@@ -1,6 +1,10 @@
 import React from "react";
-import "./About.css"
+import "./About.css";
 import logo from "../Assets/logo.png";
+import rajesh from "../Assets/rajesh.png";
+import shilpa from "../Assets/shilpa.png";
+import bhargav from "../Assets/bhargav.JPG";
+
 const About = () => {
   return (
     <div className="about-container">
@@ -18,10 +22,7 @@ const About = () => {
             </p>
           </div>
           <div className="story-image">
-            <img
-              src={logo}
-              alt="Our journey story"
-            />
+            <img src={logo} alt="Our journey story" />
           </div>
         </div>
       </section>
@@ -30,65 +31,70 @@ const About = () => {
       <section className="choreographers-section">
         <h2>Meet Our Choreographers</h2>
         <div className="choreographers-vertical">
-          {/* Choreographer 1 */}
+          {/* Choreographer 1 - Rajesh Cochin */}
           <div className="choreographer-card">
             <img
-              src="https://via.placeholder.com/400x500"
+              src={rajesh}
               alt="Rajesh Cochin"
               className="choreographer-image"
             />
             <div className="choreographer-details">
-              <h4>John Doe</h4>
+              <h4>Rajesh Cochin</h4>
               <p>
-                He is one of the most noted choreographers in Kuwait.
-                A highly talented choreographer with extensive experience in creating and teaching original dances for stage performances, competitions and events.
+                One of the most noted choreographers in Kuwait with 43 years of experience
+                in creating and teaching original dances for stage performances, competitions,
+                and events. His expertise spans across Acrobatics, Cinematic, Bollywood and
+                Contemporary styles.
               </p>
               <ul className="achievements">
-                <li>Winner of the National Dance Championship 2022</li>
-                <li>Featured choreographer at the International Arts Festival</li>
-                <li>Directed over 50 contemporary dance performances</li>
+                <li>Received two awards for Best Choreography at National level for programs "WOOGI - WOOGI" & "DHOOM MACHALE"</li>
+                <li>Founded DK Dance World in Kuwait teaching students from age 6 to adults</li>
+                <li>Spearheaded numerous artistic projects promoting modern dance in Kuwait</li>
               </ul>
             </div>
           </div>
 
-          {/* Choreographer 2 */}
+          {/* Choreographer 2 - Shilpa C Rajesh */}
           <div className="choreographer-card">
             <img
-              src="https://via.placeholder.com/400x500"
-              alt="Jane Smith"
+              src={shilpa}
+              alt="Shilpa C Rajesh"
               className="choreographer-image"
             />
             <div className="choreographer-details">
-              <h4>Jane Smith</h4>
+              <h4>Shilpa C Rajesh</h4>
               <p>
-                Known for her vibrant hip-hop routines, Jane brings unmatched
-                energy to every performance and has worked with top artists.
+                A highly accomplished Bharatanatyam dancer and educator with
+                profound knowledge of classical dance forms. Currently teaching at the Indian
+                Community School in Kuwait while serving as an assistant choreographer at
+                DK Dance World.
               </p>
               <ul className="achievements">
-                <li>Choreographed for two international music tours</li>
-                <li>Winner of the Urban Dance Festival 2023</li>
-                <li>Creator of multiple viral dance videos</li>
+                <li>Master of Arts in Bharatanatyam from St. Theresa's College, Ernakulam</li>
+                <li>Bachelor of Arts in Bharatanatyam from RLV College of Music and Fine Arts</li>
+                <li>Owner of Dekshina Dance Studio in Vypin, Kerala</li>
               </ul>
             </div>
           </div>
 
-          {/* Choreographer 3 */}
+          {/* Choreographer 3 - Bhargav Chandran */}
           <div className="choreographer-card">
             <img
-              src="https://via.placeholder.com/400x500"
-              alt="Emma Williams"
+              src={bhargav}
+              alt="Bhargav Chandran"
               className="choreographer-image"
             />
             <div className="choreographer-details">
-              <h4>Emma Williams</h4>
+              <h4>Bhargav Chandran</h4>
               <p>
-                Emma’s mastery of classical forms combined with her innovative
-                spirit has made her a pioneer in the world of traditional dance.
+                Assistant Choreographer and Professional Dancer with extensive experience since 2004.
+                His choreography blends innovation and tradition, bringing together classical training
+                and contemporary styles to create captivating performances.
               </p>
               <ul className="achievements">
-                <li>Recipient of the Excellence in Classical Dance Award</li>
-                <li>Performed at the Royal International Dance Gala</li>
-                <li>Published research on traditional dance preservation</li>
+                <li>Worked on Indian films including Madhagaja, Vikrant Rona, Shiva Vedha, and Kabzaa</li>
+                <li>Trained in multiple dance forms: Bharatanatyam, Kathakali, Kuchipudi, Kerala Nadanam, and Contemporary</li>
+                <li>Performed in drama alongside renowned artist Mr. Madurai R. Muralidaran</li>
               </ul>
             </div>
           </div>
@@ -101,7 +107,7 @@ const About = () => {
         <div className="achievements-list">
           <div className="achievement-card">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="/api/placeholder/400/300"
               alt="National Dance Championship"
             />
             <h3>National Dance Championship 2023</h3>
@@ -112,7 +118,7 @@ const About = () => {
           </div>
           <div className="achievement-card">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="/api/placeholder/400/300"
               alt="Community Impact Program"
             />
             <h3>Community Impact Program</h3>
@@ -123,7 +129,7 @@ const About = () => {
           </div>
           <div className="achievement-card">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="/api/placeholder/400/300"
               alt="Cultural Excellence Award"
             />
             <h3>Cultural Excellence Award</h3>
