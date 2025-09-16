@@ -17,16 +17,86 @@
 .contact-intro {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 4rem;
   color: var(--text-secondary);
   font-family: var(--font-body);
   font-size: 1.2rem;
   line-height: 1.6;
 }
 
+/* --- Location Styles --- */
+.locations-section {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.locations-section h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.locations-grid {
+  display: grid;
+  /* UPDATED: This now creates a responsive 3-column grid that wraps automatically */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.location-card {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: var(--transition-standard);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.location-card .address {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.map-button {
+  display: inline-block;
+  background: var(--accent-gradient);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: bold;
+  text-align: center;
+  transition: var(--transition-standard);
+  margin-top: auto;
+}
+
+.map-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* --- Contact Content Grid --- */
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -107,18 +177,11 @@
   font-size: 1.1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+  /* The auto-fit grid handles the location cards, so we only need to manage the contact grid */
   .contact-content {
     grid-template-columns: 1fr;
-  }
-
-  .contact-info {
-    order: 2;
-  }
-
-  .whatsapp-container {
-    order: 1;
   }
 }
 
@@ -135,7 +198,7 @@
     font-size: 1.1rem;
   }
 
-  .info-card {
+  .location-card, .info-card {
     padding: 1.5rem;
   }
   

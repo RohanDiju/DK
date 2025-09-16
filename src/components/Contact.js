@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import qr from "../Assets/qr.jpg";
+import qr from "../Assets/DK QR.jpg";
 
 const Contact = () => {
   return (
@@ -8,28 +8,83 @@ const Contact = () => {
       <h1>Contact Us</h1>
       <p className="contact-intro">
         Have questions about our dance classes? We'd love to hear from you! 
-        Scan the QR code below to connect with us on WhatsApp.
+        Find our studio locations below or scan the QR code to connect with us on WhatsApp.
       </p>
+
+      {/* Locations Section */}
+      <div className="locations-section">
+        <h2>Our Studios</h2>
+        <div className="locations-grid">
+          {/* Abbasiya Studio Card */}
+          <div className="location-card">
+            <h3>Abbasiya Studio</h3>
+            <p className="address">
+              Near Central School<br/>
+              Abbasiya
+            </p>
+            <a 
+              href="https://maps.app.goo.gl/Zd9wzbLxKNeicMLq6?g_st=aw" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="map-button"
+            >
+              View on Map
+            </a>
+          </div>
+
+          {/* Mangaf Studio Card (Updated with coordinates) */}
+          <div className="location-card">
+            <h3>Mangaf Studio</h3>
+            <p className="address">
+              Block 4, Street 24<br/>
+              Building 90, Mangaf
+            </p>
+            <a 
+              href="https://maps.app.goo.gl/RyBjiEY1N6XfjoPu8" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="map-button"
+            >
+              View on Map
+            </a>
+          </div>
+          
+          {/* Salmiya Studio Card (New) */}
+          <div className="location-card">
+            <h3>Salmiya Studio</h3>
+            <p className="address">
+              Block 10<br/>
+              Near Nilavara Restaurant
+            </p>
+            <a 
+              href="https://maps.app.goo.gl/HtjDW2VhDiuFopE59?g_st=iwb" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="map-button"
+            >
+              View on Map
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="contact-content">
         <div className="contact-info">
           <div className="info-card">
-            <h3>Visit Our Studio</h3>
-            <p>123 Dance Avenue</p>
-            <p>Cityville, ST 12345</p>
-          </div>
-
-          <div className="info-card">
             <h3>Contact Information</h3>
-            <p>Phone: (555) 123-4567</p>
+            <p>Phone: +96569960662</p>
+            <p>Phone: +96560979494</p>
             <p>Email: info@danceschool.com</p>
           </div>
 
           <div className="info-card">
             <h3>Studio Hours</h3>
-            <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
-            <p>Saturday: 9:00 AM - 5:00 PM</p>
-            <p>Sunday: 10:00 AM - 3:00 PM</p>
+            <h4>Mangaf</h4>
+            <p>Monday and Saturday: 5:00 PM - 8:00 PM</p>
+            <h4>Salmiya</h4>
+            <p>Wednesday and Friday: 5:00 PM - 8:00 PM</p>
+            <h4>Abbasiya</h4>
+            <p>Tuesday and Sunday: 5:00 PM - 8:00 PM</p>
           </div>
         </div>
 
@@ -37,15 +92,14 @@ const Contact = () => {
           <h2>Connect With Us on WhatsApp</h2>
           <p>Scan the QR code below to start a conversation:</p>
           <div className="qr-code-container">
-            {/* You would need to replace this with your actual WhatsApp QR code image */}
             <img 
-              src = {qr}
+              src={qr}
               alt="WhatsApp QR Code" 
               className="whatsapp-qr-code" 
             />
           </div>
           <p className="qr-instructions">
-            Or message us directly at <strong>(555) 123-4567</strong>
+            Or message us directly at <strong>+96569960662</strong>
           </p>
         </div>
       </div>
