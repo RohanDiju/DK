@@ -53,8 +53,8 @@ const Home = () => {
             <div className="slide-content">
               <img src={slide1} alt="Slide 1" className="slide-image" />
               <div className="slide-text">
-                <h1>Dance to Express</h1>
-                <p>Feel the rhythm, and let your body move to the music.</p>
+                <h1>DK DANCE WORLD</h1>
+                <p>Kuwait's Premier Dance Academy</p>
               </div>
             </div>
           </SwiperSlide>
@@ -62,8 +62,8 @@ const Home = () => {
             <div className="slide-content">
               <img src={slide2} alt="Slide 2" className="slide-image" />
               <div className="slide-text">
-                <h1>Learn from the Best</h1>
-                <p>Professional instructors guiding every step of the way.</p>
+                <h1>43+ Years Experience</h1>
+                <p>Professional dance training across three offline locations in Kuwait.</p>
               </div>
             </div>
           </SwiperSlide>
@@ -71,8 +71,8 @@ const Home = () => {
             <div className="slide-content">
               <img src={slide3} alt="Slide 3" className="slide-image" />
               <div className="slide-text">
-                <h1>Experience the Joy</h1>
-                <p>Dance brings happiness and confidence like nothing else.</p>
+                <h1>Online via TutorsValley</h1>
+                <p>Now available Online worldwide in collaboration with TutorsValley Music Academy.</p>
               </div>
             </div>
           </SwiperSlide>
@@ -80,8 +80,8 @@ const Home = () => {
             <div className="slide-content">
               <img src={slide4} alt="Slide 4" className="slide-image" />
               <div className="slide-text">
-                <h1>Join Our Dance Family</h1>
-                <p>Become part of our growing community of dancers.</p>
+                <h1>6+ Dance Styles</h1>
+                <p>From Acrobatics to Bharatanatyam, for students of all ages.</p>
               </div>
             </div>
           </SwiperSlide>
@@ -103,50 +103,56 @@ const Home = () => {
 
       {/* Choreographers Section */}
       <section className="choreographers-section">
-        <h1>Meet Our Choreographers</h1>
-        <p>
-          Our expert choreographers bring years of experience in various dance
-          forms, ensuring you receive world-class training.
-        </p>
-
-        {/* Choreographer 1 */}
-        <div className="choreographer-details">
-          <img src={choreo1} alt="Rajesh Cochin" className="choreographer-photo" />
-          <div className="choreographer-info">
-            <h3>Rajesh Cochin</h3>
-            <p>Specialized in Contemporary Dance</p>
-            <p>
-              With over 10 years of experience, Rajesh has performed in numerous international 
-              dance festivals. His passion for contemporary dance has inspired countless students.
-            </p>
-          </div>
+        <div className="section-header">
+          <h1>Meet Our Choreographers</h1>
+          <p>
+            Our expert choreographers bring years of experience in various dance
+            forms, ensuring you receive world-class training.
+          </p>
         </div>
 
-        {/* Choreographer 2 */}
-        <div className="choreographer-details">
-          <img src={choreo2} alt="Shilpa C Rajesh" className="choreographer-photo" />
-          <div className="choreographer-info">
-            <h3>RLV Shilpa C Rajesh</h3>
-            <p>Expert in Classical Dance</p>
-            <p>
-              A passionate and professional dancer with a strong academic foundation in dance, 
-              she has completed both undergraduate and postgraduate degrees specializing in 
-              Bharatanatyam. Combining traditional knowledge with modern artistry, she brings 
-              a unique blend of expertise and creativity to her teaching.
-            </p>
+        <div className="choreographers-grid">
+          {/* Choreographer 1 */}
+          <div className="choreographer-card">
+            <div className="choreographer-image-wrapper">
+              <img src={choreo1} alt="Rajesh Cochin" className="choreographer-photo" />
+            </div>
+            <div className="choreographer-info">
+              <h3>Rajesh Cochin</h3>
+              <p className="choreographer-role">Founder & Head Choreographer</p>
+              <p className="choreographer-bio">
+                One of Kuwait's most recognised choreographers with over 43 years of dance experience. Founder of DK Dance World, leading students aged 6 to adults in Acrobatics, Cinematic, Bollywood, and Contemporary styles. Winner of two National-level Best Choreography awards for "Woogi Woogi" and "Dhoom Machale."
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Choreographer 3 */}
-        <div className="choreographer-details">
-          <img src={choreo3} alt="Bharghav Chandran" className="choreographer-photo" />
-          <div className="choreographer-info">
-            <h3>Bharghav Chandran</h3>
-            <p>Latin Dance Enthusiast</p>
-            <p>
-              Bharghav is known for his expertise in Salsa, Bachata, and other Latin dance forms. 
-              He has trained under world-renowned instructors and brings his vibrant energy to every class.
-            </p>
+          {/* Choreographer 2 */}
+          <div className="choreographer-card">
+            <div className="choreographer-image-wrapper">
+              <img src={choreo2} alt="Shilpa C Rajesh" className="choreographer-photo" />
+            </div>
+            <div className="choreographer-info">
+              <h3>RLV Shilpa C Rajesh</h3>
+              <p className="choreographer-role">Bharatanatyam & Indian Classical</p>
+              <p className="choreographer-bio">
+                Dedicated dance instructor with 7+ years of experience in traditional and modern Indian dance forms. MA in Bharatanatyam from ST. Teresa's College (MG University). Performed on 100+ stages and participated in numerous international choreography projects. Trained at RLV College of Music and Fine Arts, Kerala.
+              </p>
+            </div>
+          </div>
+
+          {/* Choreographer 3 */}
+          <div className="choreographer-card">
+            <div className="choreographer-image-wrapper">
+              <img src={choreo3} alt="Bharghav Chandran" className="choreographer-photo" />
+            </div>
+            <div className="choreographer-info">
+              <h3>Bharghav Chandran</h3>
+              <p className="choreographer-role">Latin Dance Enthusiast</p>
+              <p className="choreographer-bio">
+                Bharghav is known for his expertise in Salsa, Bachata, and other Latin dance forms. 
+                He has trained under world-renowned instructors and brings his vibrant energy to every class.
+              </p>
+            </div>
           </div>
         </div>
       </section>

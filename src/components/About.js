@@ -41,15 +41,12 @@ const About = () => {
             <div className="choreographer-details">
               <h4>Rajesh Cochin</h4>
               <p>
-                One of the most noted choreographers in Kuwait with 43 years of experience
-                in creating and teaching original dances for stage performances, competitions,
-                and events. His expertise spans across Acrobatics, Cinematic, Bollywood and
-                Contemporary styles.
+                One of Kuwait's most recognised choreographers with over 43 years of dance experience. Founder of DK Dance World, leading students aged 6 to adults in Acrobatics, Cinematic, Bollywood, and Contemporary styles. Winner of two National-level Best Choreography awards for "Woogi Woogi" and "Dhoom Machale."
               </p>
               <ul className="achievements">
-                <li>Received two awards for Best Choreography at National level for programs "WOOGI - WOOGI" & "DHOOM MACHALE"</li>
-                <li>Founded DK Dance World in Kuwait teaching students from age 6 to adults</li>
-                <li>Spearheaded numerous artistic projects promoting modern dance in Kuwait</li>
+                <li>2× National Best Choreography Award</li>
+                <li>Cochin Kalabhavan Trained Artist</li>
+                <li>Specialized in Acrobatics, Bollywood, Cinematic, and Contemporary</li>
               </ul>
             </div>
           </div>
@@ -64,15 +61,12 @@ const About = () => {
             <div className="choreographer-details">
               <h4>Shilpa C Rajesh</h4>
               <p>
-                A highly accomplished Bharatanatyam dancer and educator with
-                profound knowledge of classical dance forms. Currently teaching at the Indian
-                Community School in Kuwait while serving as an assistant choreographer at
-                DK Dance World.
+                Dedicated dance instructor with 7+ years of experience in traditional and modern Indian dance forms. Performed on 100+ stages and participated in numerous international choreography projects. Trained at RLV College of Music and Fine Arts, Kerala.
               </p>
               <ul className="achievements">
-                <li>Master of Arts in Bharatanatyam from St. Theresa's College, Ernakulam</li>
-                <li>Bachelor of Arts in Bharatanatyam from RLV College of Music and Fine Arts</li>
-                <li>Owner of Dekshina Dance Studio in Vypin, Kerala</li>
+                <li>MA Bharatanatyam from ST. Teresa's College (MG University)</li>
+                <li>International Performances across various stages</li>
+                <li>Expertise in Classical, Bharatanatyam, and Choreography</li>
               </ul>
             </div>
           </div>

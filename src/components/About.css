@@ -2,139 +2,148 @@
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  background-color: var(--bg-primary); /* Adapted for dark theme */
 }
 
 /* Story Section */
-.story-section {
+.about-container .story-section {
   margin-bottom: 4rem;
 }
 
-.story-content {
+.about-container .story-content {
   display: flex;
   gap: 3rem;
   align-items: center;
 }
 
-.story-text {
+.about-container .story-text {
   flex: 1;
 }
 
-.story-text h2 {
-  font-size: 2.5rem;
-  color: #d1d1d1; /* Brighter silver color for title */
+.about-container .story-text h2 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 1.5rem;
-  font-weight: 600; /* Added weight for emphasis */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Added subtle text shadow for depth */
 }
 
-.story-text p {
+.about-container .story-text p {
+  font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #666666;
+  color: var(--text-secondary); /* Dark theme text */
 }
 
-.story-image {
+.about-container .story-image {
   flex: 1;
 }
 
-.story-image img {
+.about-container .story-image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Choreographers Section */
-.choreographers-section {
+.about-container .choreographers-section {
   margin-bottom: 4rem;
 }
 
-.choreographers-section h2 {
-  font-size: 2.5rem;
-  color: #d1d1d1; /* Brighter silver color for section title */
+.about-container .choreographers-section h2 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  font-weight: 600; /* Added weight for emphasis */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Added subtle text shadow for depth */
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.choreographers-vertical {
+.about-container .choreographers-vertical {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.choreographer-card {
+.about-container .choreographer-card {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 2rem;
-  background-color: #fff;
+  background-color: var(--bg-secondary); /* Adapted card background */
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-standard);
 }
 
-.choreographer-card:hover {
+.about-container .choreographer-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-.choreographer-image {
+.about-container .choreographer-image {
+  flex-shrink: 0;
   width: 300px;
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.choreographer-details {
+.about-container .choreographer-details {
   flex: 1;
-  display: flex; /* Added display flex */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center horizontally */
-  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0;
 }
 
-.choreographer-details h4 {
+.about-container .choreographer-details h4 {
+  font-family: var(--font-heading);
   font-size: 2rem;
-  color: #525252;
-  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
   line-height: 1.2;
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center text */
-  width: 100%; /* Full width to ensure centering */
+  text-align: left;
+  width: 100%;
 }
 
-.choreographer-details p {
+.about-container .choreographer-details p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555555;
+  color: var(--text-secondary);
   margin-bottom: 1.8rem;
-  text-align: left; /* Align text to left */
-  width: 100%; /* Full width */
+  text-align: left;
+  width: 100%;
 }
 
-.achievements {
+.about-container .achievements {
   list-style-type: none;
   padding: 0;
   margin-top: 1rem;
-  width: 100%; /* Full width */
-  align-self: stretch; /* Stretch to fill container width */
+  width: 100%;
+  align-self: stretch;
 }
 
-.achievements li {
+.about-container .achievements li {
   padding: 0.75rem 0;
-  color: #444444;
+  color: var(--text-secondary);
   position: relative;
   padding-left: 1.5rem;
   line-height: 1.4;
-  text-align: left; /* Left align text */
+  text-align: left;
 }
 
-.achievements li::before {
+.about-container .achievements li::before {
   content: "•";
-  color: #c4c4c4;
+  color: var(--primary-color);
   position: absolute;
   left: 0;
   font-size: 1.2rem;
@@ -142,59 +151,60 @@
 }
 
 /* Achievements Section */
-.achievements-section {
+.about-container .achievements-section {
   margin-bottom: 4rem;
 }
 
-.achievements-section h2 {
-  font-size: 2.5rem;
-  color: #d1d1d1;
+.about-container .achievements-section h2 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  font-weight: 600;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.achievements-list {
+.about-container .achievements-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
-.achievement-card {
-  background-color: #fff;
-  border-radius: 12px;
+.about-container .achievement-card {
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-standard);
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.achievement-card:hover {
+.about-container .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-.achievement-card img {
+.about-container .achievement-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-.achievement-card h3 {
+.about-container .achievement-card h3 {
+  font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: #6a6a6a;
+  color: var(--text-primary);
   padding: 1.5rem 1.5rem 0.75rem;
   line-height: 1.3;
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.achievement-card p {
+.about-container .achievement-card p {
   font-size: 1rem;
-  color: #555555;
+  color: var(--text-secondary);
   padding: 0 1.5rem 1.5rem;
   line-height: 1.5;
   flex-grow: 1;
@@ -202,62 +212,63 @@
 
 /* Responsive Design */
 @media (max-width: 968px) {
-  .story-content {
+  .about-container .story-content {
     flex-direction: column;
   }
 
-  .choreographer-card {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .choreographer-image {
-    width: 100%;
-    max-width: 350px;
+  .about-container .choreographer-image {
+    width: 250px;
     height: 350px;
-    margin-bottom: 1.5rem;
   }
 
-  .choreographer-details {
+  .about-container .choreographer-details {
     width: 100%;
-    padding: 0 1rem; /* Add some padding on the sides */
+    padding: 0;
   }
 
-  .achievements {
-    width: 100%;
-  }
-
-  .achievements li {
+  .about-container .achievements {
     width: 100%;
   }
 
-  .achievements-list {
+  .about-container .achievements li {
+    width: 100%;
+  }
+
+  .about-container .achievements-list {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
   .about-container {
-    padding: 1.5rem;
+    padding: 3rem 1rem;
   }
 
-  .story-text h2,
-  .choreographers-section h2,
-  .achievements-section h2 {
-    font-size: 2rem;
+  .about-container .choreographer-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-container .story-text h2,
+  .about-container .choreographers-section h2,
+  .about-container .achievements-section h2 {
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
 
-  .choreographer-details h4 {
+  .about-container .choreographer-details h4 {
     font-size: 1.8rem;
+    text-align: center;
   }
 
-  .achievement-card h3 {
+  .about-container .achievement-card h3 {
     font-size: 1.4rem;
   }
   
-  .choreographer-image {
+  .about-container .choreographer-image {
+    width: 200px;
     height: 300px;
+    margin-bottom: 0;
   }
 }
 
@@ -267,22 +278,23 @@
     padding: 1rem;
   }
   
-  .story-text h2,
-  .choreographers-section h2,
-  .achievements-section h2 {
-    font-size: 1.8rem;
+  .about-container .story-text h2,
+  .about-container .choreographers-section h2,
+  .about-container .achievements-section h2 {
+    font-size: 2rem;
   }
   
-  .choreographer-details h4 {
+  .about-container .choreographer-details h4 {
     font-size: 1.6rem;
   }
   
-  .choreographer-image {
+  .about-container .choreographer-image {
+    width: 150px;
     height: 250px;
   }
   
-  .choreographer-card,
-  .achievement-card {
+  .about-container .choreographer-card,
+  .about-container .achievement-card {
     padding: 1.5rem;
   }
 }

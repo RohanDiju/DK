@@ -9,6 +9,8 @@ const Contact = () => {
       <p className="contact-intro">
         Have questions about our dance classes? We'd love to hear from you! 
         Find our studio locations below or scan the QR code to connect with us on WhatsApp.
+        <br/><br/>
+        🚌 <strong>Transportation available</strong> from Farwaniya · Khaitan · Riggae
       </p>
 
       {/* Locations Section */}
@@ -17,10 +19,9 @@ const Contact = () => {
         <div className="locations-grid">
           {/* Abbasiya Studio Card */}
           <div className="location-card">
-            <h3>Abbasiya Studio</h3>
+            <h3>Mangaf Studio</h3>
             <p className="address">
-              Near Central School<br/>
-              Abbasiya
+              Main Branch · Kuwait
             </p>
             <a 
               href="https://maps.app.goo.gl/Zd9wzbLxKNeicMLq6?g_st=aw" 
@@ -34,10 +35,9 @@ const Contact = () => {
 
           {/* Mangaf Studio Card (Updated with coordinates) */}
           <div className="location-card">
-            <h3>Mangaf Studio</h3>
+            <h3>Abbassiya Studio</h3>
             <p className="address">
-              Block 4, Street 24<br/>
-              Building 90, Mangaf
+              Kuwait City Area
             </p>
             <a 
               href="https://maps.app.goo.gl/RyBjiEY1N6XfjoPu8" 
@@ -53,8 +53,7 @@ const Contact = () => {
           <div className="location-card">
             <h3>Salmiya Studio</h3>
             <p className="address">
-              Block 10<br/>
-              Near Nilavara Restaurant
+              Kuwait City Area
             </p>
             <a 
               href="https://maps.app.goo.gl/HtjDW2VhDiuFopE59?g_st=iwb" 
