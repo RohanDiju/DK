@@ -216,7 +216,7 @@ iframe {
 }
 
 .choreographer-card {
-  background: rgba(213, 7, 7, 0.4);
+  background: rgba(20, 17, 17, 0.4);
   /* Dark translucent background */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -294,7 +294,7 @@ iframe {
 }
 
 .choreographer-role {
-  color: #ff4d5a;
+  color: #bb5158;
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -302,8 +302,8 @@ iframe {
   margin-bottom: 1.5rem;
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(255, 77, 90, 0.1);
-  border-radius: 40px;
+  background: rgba(33, 21, 21, 0.1);
+  border-radius: 6px;
   border: 1px solid rgba(255, 77, 90, 0.15);
 }
 

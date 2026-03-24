@@ -40,21 +40,39 @@
   transition: color 0.3s ease;
 }
 
+/* Disable global animated underline */
+.logo a::after,
+.nav__link::after {
+  display: none !important;
+}
+
 .logo a:hover {
   color: #ff4d5a;
   /* Brighter red on hover */
 }
 
+.header-logo-img {
+  margin-left: 10px;
+  height: 46px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover .header-logo-img {
+  transform: scale(1.05);
+}
+
 .nav {
   display: flex;
-  gap: 20px;
-  /* Reduced gap between navigation items */
+  gap: 40px;
+  /* Increased gap between navigation items */
 }
 
 .nav__list {
   display: flex;
-  gap: 15px;
-  /* Reduced gap for compact layout */
+  gap: 35px;
+  /* Increased gap for wider layout */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -64,10 +82,10 @@
   color: #e0e0e0;
   /* Soft text color */
   text-decoration: none;
-  font-size: 0.9rem;
-  /* Slightly smaller font size */
-  padding: 6px 10px;
-  /* Reduced padding for clickable area */
+  font-size: 1.05rem;
+  /* Larger font size */
+  padding: 8px 16px;
+  /* Increased padding for clickable area */
   border-radius: 6px;
   /* Slightly smaller rounded edges */
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;

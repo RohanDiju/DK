@@ -12,17 +12,17 @@ import choreo1 from "../Assets/choreographer1.jpg";
 import choreo2 from "../Assets/choreographer2.jpg";
 import choreo3 from "../Assets/choreographer3.jpg";
 // Import celebrity images
-import celeb1 from "../Assets/choreographer1.jpg";  // Add these images
+
 import celeb2 from "../Assets/slide2.jpg";     // to your Assets folder
 import celeb3 from "../Assets/slide3.jpg"; // or use appropriate paths
 
 const Home = () => {
   const celebrities = [
     {
-      name: "Mohanlal",
-      role: "Actor",
+      name: "Prabhu Deva",
+      role: "Dancer & Actor",
       quote: "The dedication to teaching classical dance forms while embracing modern techniques is truly remarkable. This academy stands out in preserving our cultural heritage.",
-      image: celeb1
+      image: "prabhudeva.jpg"
     },
     {
       name: "Manju Warrier",
@@ -121,21 +121,20 @@ const Home = () => {
               <h3>Rajesh Cochin</h3>
               <p className="choreographer-role">Founder & Head Choreographer</p>
               <p className="choreographer-bio">
-                One of Kuwait's most recognised choreographers with over 43 years of dance experience. Founder of DK Dance World, leading students aged 6 to adults in Acrobatics, Cinematic, Bollywood, and Contemporary styles. Winner of two National-level Best Choreography awards for "Woogi Woogi" and "Dhoom Machale."
-              </p>
+                One of Kuwait's most recognised choreographers with over 43 years of dance experience. Founder of DK Dance World, leading students aged 6 to adults in Acrobatics, Cinematic, Bollywood, and Contemporary styles.</p>
             </div>
           </div>
 
           {/* Choreographer 2 */}
           <div className="choreographer-card">
             <div className="choreographer-image-wrapper">
-              <img src={choreo2} alt="Shilpa C Rajesh" className="choreographer-photo" />
+              <img src={"shilpa.png"} alt="Shilpa C Rajesh" className="choreographer-photo" />
             </div>
             <div className="choreographer-info">
               <h3>RLV Shilpa C Rajesh</h3>
               <p className="choreographer-role">Bharatanatyam & Indian Classical</p>
               <p className="choreographer-bio">
-                Dedicated dance instructor with 7+ years of experience in traditional and modern Indian dance forms. MA in Bharatanatyam from ST. Teresa's College (MG University). Performed on 100+ stages and participated in numerous international choreography projects. Trained at RLV College of Music and Fine Arts, Kerala.
+                Dedicated dance instructor with 7+ years of experience in traditional and modern Indian dance forms.
               </p>
             </div>
           </div>
@@ -149,8 +148,7 @@ const Home = () => {
               <h3>Bharghav Chandran</h3>
               <p className="choreographer-role">Latin Dance Enthusiast</p>
               <p className="choreographer-bio">
-                Bharghav is known for his expertise in Salsa, Bachata, and other Latin dance forms. 
-                He has trained under world-renowned instructors and brings his vibrant energy to every class.
+                Bharghav's choreography blends innovation and tradition, bringing together classical training and contemporary styles to create captivating performances.
               </p>
             </div>
           </div>
@@ -165,8 +163,8 @@ const Home = () => {
             <div key={index} className="celebrity-testimonial">
               <div className="testimonial-header">
                 <div className="celebrity-image-container">
-                  <img 
-                    src={celebrity.image} 
+                  <img
+                    src={celebrity.image}
                     alt={celebrity.name}
                     className="celebrity-image"
                   />

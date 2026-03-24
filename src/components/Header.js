@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import logo from '../Assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,9 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo">
-        <Link to="/">DK Dance World</Link>
+        <Link to="/">
+          <img src={logo} alt="DK Dance World Logo" className="header-logo-img" />
+        </Link>
       </div>
       <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
         <ul className="nav__list">
