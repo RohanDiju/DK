@@ -9,7 +9,6 @@ import slide2 from "../Assets/slide2.jpg";
 import slide3 from "../Assets/slide3.jpg";
 import slide4 from "../Assets/slide4.jpg";
 import choreo1 from "../Assets/choreographer1.jpg";
-import choreo2 from "../Assets/choreographer2.jpg";
 import choreo3 from "../Assets/choreographer3.jpg";
 // Import celebrity images
 
