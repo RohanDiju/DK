@@ -7,9 +7,9 @@ const Contact = () => {
     <div className="contact-container">
       <h1>Contact Us</h1>
       <p className="contact-intro">
-        Have questions about our dance classes? We'd love to hear from you! 
+        Have questions about our dance classes? We'd love to hear from you!
         Find our studio locations below or scan the QR code to connect with us on WhatsApp.
-        <br/><br/>
+        <br /><br />
         🚌 <strong>Transportation available</strong> from Farwaniya · Khaitan · Riggae
       </p>
 
@@ -23,10 +23,10 @@ const Contact = () => {
             <p className="address">
               Main Branch · Kuwait
             </p>
-            <a 
-              href="https://maps.app.goo.gl/Zd9wzbLxKNeicMLq6?g_st=aw" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://maps.app.goo.gl/RyBjiEY1N6XfjoPu8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="map-button"
             >
               View on Map
@@ -39,26 +39,26 @@ const Contact = () => {
             <p className="address">
               Kuwait City Area
             </p>
-            <a 
-              href="https://maps.app.goo.gl/RyBjiEY1N6XfjoPu8" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://maps.app.goo.gl/Zd9wzbLxKNeicMLq6?g_st=aw"
+              target="_blank"
+              rel="noopener noreferrer"
               className="map-button"
             >
               View on Map
             </a>
           </div>
-          
+
           {/* Salmiya Studio Card (New) */}
           <div className="location-card">
             <h3>Salmiya Studio</h3>
             <p className="address">
               Kuwait City Area
             </p>
-            <a 
-              href="https://maps.app.goo.gl/HtjDW2VhDiuFopE59?g_st=iwb" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://maps.app.goo.gl/HtjDW2VhDiuFopE59?g_st=iwb"
+              target="_blank"
+              rel="noopener noreferrer"
               className="map-button"
             >
               View on Map
@@ -91,10 +91,10 @@ const Contact = () => {
           <h2>Connect With Us on WhatsApp</h2>
           <p>Scan the QR code below to start a conversation:</p>
           <div className="qr-code-container">
-            <img 
+            <img
               src={qr}
-              alt="WhatsApp QR Code" 
-              className="whatsapp-qr-code" 
+              alt="WhatsApp QR Code"
+              className="whatsapp-qr-code"
             />
           </div>
           <p className="qr-instructions">
